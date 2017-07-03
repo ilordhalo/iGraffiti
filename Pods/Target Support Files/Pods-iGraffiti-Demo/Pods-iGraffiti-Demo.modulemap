@@ -1,0 +1,6 @@
+framework module Pods_iGraffiti_Demo {
+  umbrella header "Pods-iGraffiti-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

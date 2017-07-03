@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F24B8271EB623550073FBCC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24B8261EB623550073FBCC /* Global.swift */; };
+		0F38383B1EC0D4A600DDD5B5 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F38383A1EC0D4A600DDD5B5 /* SearchTableViewController.swift */; };
+		0F465CFC1EB4CD0C00E26120 /* WallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F465CFB1EB4CD0C00E26120 /* WallManager.swift */; };
+		0F465CFE1EB4CE3600E26120 /* ManagerErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F465CFD1EB4CE3600E26120 /* ManagerErrorType.swift */; };
+		0F465D001EB4D11C00E26120 /* WallManagerWorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F465CFF1EB4D11C00E26120 /* WallManagerWorkState.swift */; };
+		0F465D021EB4D1C100E26120 /* WallManagerWaitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F465D011EB4D1C100E26120 /* WallManagerWaitState.swift */; };
+		0F465D041EB4D1F400E26120 /* WallManagerErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F465D031EB4D1F400E26120 /* WallManagerErrorState.swift */; };
+		0F4B58E21EA6392300900651 /* DrawTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B58E11EA6392300900651 /* DrawTableView.swift */; };
+		0F4B58E41EA639DC00900651 /* DrawManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B58E31EA639DC00900651 /* DrawManager.swift */; };
+		0F4B58E61EA63B9500900651 /* Pen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B58E51EA63B9500900651 /* Pen.swift */; };
+		0F4B58E81EA63CBE00900651 /* Eraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B58E71EA63CBE00900651 /* Eraser.swift */; };
+		0F4B58EA1EA6425400900651 /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B58E91EA6425400900651 /* DrawLine.swift */; };
+		0F4D6C2B1EBB97A100BCA772 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D6C2A1EBB97A100BCA772 /* UserViewController.swift */; };
+		0F52843B1EB7B2D3005AEE44 /* CompareExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52843A1EB7B2D3005AEE44 /* CompareExtension.swift */; };
+		0F5693E71ECB64AE0019C2AF /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5693E61ECB64AE0019C2AF /* NotificationTableViewController.swift */; };
+		0F5693E91ECB7DDF0019C2AF /* NotiWallListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5693E81ECB7DDF0019C2AF /* NotiWallListTableViewController.swift */; };
+		0F58A3911EC1EBA200893B65 /* WallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F58A3901EC1EBA200893B65 /* WallTableViewCell.swift */; };
+		0F58A3951EC1FC6E00893B65 /* WallInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F58A3941EC1FC6E00893B65 /* WallInfoTableViewController.swift */; };
+		0F58A3971EC20C7400893B65 /* UserInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F58A3961EC20C7400893B65 /* UserInfoTableViewController.swift */; };
+		0F81BDB01EA7856000B17F78 /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81BDAF1EA7856000B17F78 /* WallViewController.swift */; };
+		0FB2E7121EAB4F4A0064E8D2 /* WallViewControllerDrawState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2E7111EAB4F4A0064E8D2 /* WallViewControllerDrawState.swift */; };
+		0FB2E7141EAB51490064E8D2 /* WallViewControllerWaitState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2E7131EAB51490064E8D2 /* WallViewControllerWaitState.swift */; };
+		0FB2E7161EAB51A40064E8D2 /* WallViewControllerWorkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2E7151EAB51A40064E8D2 /* WallViewControllerWorkState.swift */; };
+		0FB2E71A1EAB54010064E8D2 /* GKStateMachine+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2E7191EAB54010064E8D2 /* GKStateMachine+State.swift */; };
+		0FCF93891EC05E6500336D9F /* CreateWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF93881EC05E6500336D9F /* CreateWallViewController.swift */; };
+		0FCF938B1EC0665F00336D9F /* WallTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF938A1EC0665F00336D9F /* WallTypeTableViewController.swift */; };
+		0FD4C4E91E9FA3CF0033E17D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4C4E81E9FA3CF0033E17D /* AppDelegate.swift */; };
+		0FD4C4F01E9FA3CF0033E17D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD4C4EE1E9FA3CF0033E17D /* Main.storyboard */; };
+		0FD4C4F21E9FA3CF0033E17D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD4C4F11E9FA3CF0033E17D /* Assets.xcassets */; };
+		0FD4C4F51E9FA3CF0033E17D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD4C4F31E9FA3CF0033E17D /* LaunchScreen.storyboard */; };
+		0FD4C5001E9FA3CF0033E17D /* iGraffiti_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4C4FF1E9FA3CF0033E17D /* iGraffiti_DemoTests.swift */; };
+		0FD4C50B1E9FA3CF0033E17D /* iGraffiti_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4C50A1E9FA3CF0033E17D /* iGraffiti_DemoUITests.swift */; };
+		0FDC12A61EC9E0710040CCAB /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC12A51EC9E0710040CCAB /* MD5.swift */; };
+		0FE11D2F1EC48AE00076D38C /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE11D2E1EC48AE00076D38C /* SignUpTableViewController.swift */; };
+		0FE11D311EC48F450076D38C /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE11D301EC48F450076D38C /* AlertMessage.swift */; };
+		0FE11D331EC4A3710076D38C /* SignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE11D321EC4A3710076D38C /* SignTableViewController.swift */; };
+		0FE30AC41EBCB17500063778 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE30AC31EBCB17500063778 /* SceneManager.swift */; };
+		0FF0E7411EA4E9A800B11494 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0E7401EA4E9A800B11494 /* MainTabBarController.swift */; };
+		0FF0E7431EA4EA6F00B11494 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0E7421EA4EA6F00B11494 /* User.swift */; };
+		0FF0E7451EA4FAD800B11494 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0E7441EA4FAD800B11494 /* Wall.swift */; };
+		0FF0E7481EA4FFC600B11494 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0E7471EA4FFC600B11494 /* UserManager.swift */; };
+		835C7022D7B120B8AA2BD1AC /* Pods_iGraffiti_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 569A9A00C479C8C79A90F438 /* Pods_iGraffiti_Demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FD4C4FC1E9FA3CF0033E17D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FD4C4DD1E9FA3CE0033E17D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FD4C4E41E9FA3CE0033E17D;
+			remoteInfo = "iGraffiti-Demo";
+		};
+		0FD4C5071E9FA3CF0033E17D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FD4C4DD1E9FA3CE0033E17D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FD4C4E41E9FA3CE0033E17D;
+			remoteInfo = "iGraffiti-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E2DD6C9B1CCDF2FB171D9D /* Pods-iGraffiti-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGraffiti-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iGraffiti-Demo/Pods-iGraffiti-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		0F24B8261EB623550073FBCC /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		0F38383A1EC0D4A600DDD5B5 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		0F465CFB1EB4CD0C00E26120 /* WallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallManager.swift; sourceTree = "<group>"; };
+		0F465CFD1EB4CE3600E26120 /* ManagerErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerErrorType.swift; sourceTree = "<group>"; };
+		0F465CFF1EB4D11C00E26120 /* WallManagerWorkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallManagerWorkState.swift; sourceTree = "<group>"; };
+		0F465D011EB4D1C100E26120 /* WallManagerWaitState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallManagerWaitState.swift; sourceTree = "<group>"; };
+		0F465D031EB4D1F400E26120 /* WallManagerErrorState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallManagerErrorState.swift; sourceTree = "<group>"; };
+		0F4B58E11EA6392300900651 /* DrawTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawTableView.swift; sourceTree = "<group>"; };
+		0F4B58E31EA639DC00900651 /* DrawManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawManager.swift; sourceTree = "<group>"; };
+		0F4B58E51EA63B9500900651 /* Pen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pen.swift; sourceTree = "<group>"; };
+		0F4B58E71EA63CBE00900651 /* Eraser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eraser.swift; sourceTree = "<group>"; };
+		0F4B58E91EA6425400900651 /* DrawLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
+		0F4D6C2A1EBB97A100BCA772 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		0F52843A1EB7B2D3005AEE44 /* CompareExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompareExtension.swift; sourceTree = "<group>"; };
+		0F5693E51ECAFCFD0019C2AF /* iGraffiti-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iGraffiti-Demo.entitlements"; sourceTree = "<group>"; };
+		0F5693E61ECB64AE0019C2AF /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		0F5693E81ECB7DDF0019C2AF /* NotiWallListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiWallListTableViewController.swift; sourceTree = "<group>"; };
+		0F58A3901EC1EBA200893B65 /* WallTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallTableViewCell.swift; sourceTree = "<group>"; };
+		0F58A3941EC1FC6E00893B65 /* WallInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallInfoTableViewController.swift; sourceTree = "<group>"; };
+		0F58A3961EC20C7400893B65 /* UserInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewController.swift; sourceTree = "<group>"; };
+		0F81BDAF1EA7856000B17F78 /* WallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewController.swift; sourceTree = "<group>"; };
+		0FB2E7111EAB4F4A0064E8D2 /* WallViewControllerDrawState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewControllerDrawState.swift; sourceTree = "<group>"; };
+		0FB2E7131EAB51490064E8D2 /* WallViewControllerWaitState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewControllerWaitState.swift; sourceTree = "<group>"; };
+		0FB2E7151EAB51A40064E8D2 /* WallViewControllerWorkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallViewControllerWorkState.swift; sourceTree = "<group>"; };
+		0FB2E7191EAB54010064E8D2 /* GKStateMachine+State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GKStateMachine+State.swift"; sourceTree = "<group>"; };
+		0FCF93881EC05E6500336D9F /* CreateWallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWallViewController.swift; sourceTree = "<group>"; };
+		0FCF938A1EC0665F00336D9F /* WallTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallTypeTableViewController.swift; sourceTree = "<group>"; };
+		0FD4C4E51E9FA3CF0033E17D /* iGraffiti-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iGraffiti-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD4C4E81E9FA3CF0033E17D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FD4C4EF1E9FA3CF0033E17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FD4C4F11E9FA3CF0033E17D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FD4C4F41E9FA3CF0033E17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FD4C4F61E9FA3CF0033E17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD4C4FB1E9FA3CF0033E17D /* iGraffiti-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iGraffiti-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD4C4FF1E9FA3CF0033E17D /* iGraffiti_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGraffiti_DemoTests.swift; sourceTree = "<group>"; };
+		0FD4C5011E9FA3CF0033E17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD4C5061E9FA3CF0033E17D /* iGraffiti-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iGraffiti-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD4C50A1E9FA3CF0033E17D /* iGraffiti_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGraffiti_DemoUITests.swift; sourceTree = "<group>"; };
+		0FD4C50C1E9FA3CF0033E17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FDC12A51EC9E0710040CCAB /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		0FDC12AA1EC9E6EC0040CCAB /* iGraffiti-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGraffiti-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0FE11D2E1EC48AE00076D38C /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		0FE11D301EC48F450076D38C /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		0FE11D321EC4A3710076D38C /* SignTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignTableViewController.swift; sourceTree = "<group>"; };
+		0FE30AC31EBCB17500063778 /* SceneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		0FF0E7401EA4E9A800B11494 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0FF0E7421EA4EA6F00B11494 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0FF0E7441EA4FAD800B11494 /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		0FF0E7471EA4FFC600B11494 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		569A9A00C479C8C79A90F438 /* Pods_iGraffiti_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iGraffiti_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D572F92115AB54FFF81685C3 /* Pods-iGraffiti-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iGraffiti-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iGraffiti-Demo/Pods-iGraffiti-Demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FD4C4E21E9FA3CE0033E17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835C7022D7B120B8AA2BD1AC /* Pods_iGraffiti_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C4F81E9FA3CF0033E17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C5031E9FA3CF0033E17D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F47D5D31ECDB7A2006DAD42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FF0E7401EA4E9A800B11494 /* MainTabBarController.swift */,
+				0F81BDAF1EA7856000B17F78 /* WallViewController.swift */,
+				0F4D6C2A1EBB97A100BCA772 /* UserViewController.swift */,
+				0FCF93881EC05E6500336D9F /* CreateWallViewController.swift */,
+				0FCF938A1EC0665F00336D9F /* WallTypeTableViewController.swift */,
+				0F38383A1EC0D4A600DDD5B5 /* SearchTableViewController.swift */,
+				0F58A3941EC1FC6E00893B65 /* WallInfoTableViewController.swift */,
+				0F58A3961EC20C7400893B65 /* UserInfoTableViewController.swift */,
+				0FE11D2E1EC48AE00076D38C /* SignUpTableViewController.swift */,
+				0FE11D321EC4A3710076D38C /* SignTableViewController.swift */,
+				0F5693E61ECB64AE0019C2AF /* NotificationTableViewController.swift */,
+				0F5693E81ECB7DDF0019C2AF /* NotiWallListTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0F47D5D41ECDB7E9006DAD42 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				0F52843A1EB7B2D3005AEE44 /* CompareExtension.swift */,
+				0FE11D301EC48F450076D38C /* AlertMessage.swift */,
+				0FDC12A51EC9E0710040CCAB /* MD5.swift */,
+				0F24B8261EB623550073FBCC /* Global.swift */,
+				0F465CFD1EB4CE3600E26120 /* ManagerErrorType.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		0F47D5D51ECDB800006DAD42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B58E11EA6392300900651 /* DrawTableView.swift */,
+				0F58A3901EC1EBA200893B65 /* WallTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0FB2E71B1EAB71580064E8D2 /* GKStateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				0FB2E7191EAB54010064E8D2 /* GKStateMachine+State.swift */,
+				0FB2E7111EAB4F4A0064E8D2 /* WallViewControllerDrawState.swift */,
+				0FB2E7131EAB51490064E8D2 /* WallViewControllerWaitState.swift */,
+				0FB2E7151EAB51A40064E8D2 /* WallViewControllerWorkState.swift */,
+				0F465CFF1EB4D11C00E26120 /* WallManagerWorkState.swift */,
+				0F465D011EB4D1C100E26120 /* WallManagerWaitState.swift */,
+				0F465D031EB4D1F400E26120 /* WallManagerErrorState.swift */,
+			);
+			name = GKStateMachine;
+			sourceTree = "<group>";
+		};
+		0FD4C4DC1E9FA3CE0033E17D = {
+			isa = PBXGroup;
+			children = (
+				0FD4C4E71E9FA3CF0033E17D /* iGraffiti-Demo */,
+				0FD4C4FE1E9FA3CF0033E17D /* iGraffiti-DemoTests */,
+				0FD4C5091E9FA3CF0033E17D /* iGraffiti-DemoUITests */,
+				0FD4C4E61E9FA3CF0033E17D /* Products */,
+				75884B20B234E9AFBC3E1088 /* Pods */,
+				E54ED827F743F39F6A5D4034 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0FD4C4E61E9FA3CF0033E17D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FD4C4E51E9FA3CF0033E17D /* iGraffiti-Demo.app */,
+				0FD4C4FB1E9FA3CF0033E17D /* iGraffiti-DemoTests.xctest */,
+				0FD4C5061E9FA3CF0033E17D /* iGraffiti-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FD4C4E71E9FA3CF0033E17D /* iGraffiti-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0F5693E51ECAFCFD0019C2AF /* iGraffiti-Demo.entitlements */,
+				0FD4C4E81E9FA3CF0033E17D /* AppDelegate.swift */,
+				0F47D5D51ECDB800006DAD42 /* View */,
+				0F47D5D31ECDB7A2006DAD42 /* Controller */,
+				0F47D5D41ECDB7E9006DAD42 /* Global */,
+				0FB2E71B1EAB71580064E8D2 /* GKStateMachine */,
+				0FF0E7461EA4FE6400B11494 /* Model */,
+				0FD4C4EE1E9FA3CF0033E17D /* Main.storyboard */,
+				0FD4C4F11E9FA3CF0033E17D /* Assets.xcassets */,
+				0FD4C4F31E9FA3CF0033E17D /* LaunchScreen.storyboard */,
+				0FD4C4F61E9FA3CF0033E17D /* Info.plist */,
+				0FDC12AA1EC9E6EC0040CCAB /* iGraffiti-Demo-Bridging-Header.h */,
+			);
+			path = "iGraffiti-Demo";
+			sourceTree = "<group>";
+		};
+		0FD4C4FE1E9FA3CF0033E17D /* iGraffiti-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FD4C4FF1E9FA3CF0033E17D /* iGraffiti_DemoTests.swift */,
+				0FD4C5011E9FA3CF0033E17D /* Info.plist */,
+			);
+			path = "iGraffiti-DemoTests";
+			sourceTree = "<group>";
+		};
+		0FD4C5091E9FA3CF0033E17D /* iGraffiti-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FD4C50A1E9FA3CF0033E17D /* iGraffiti_DemoUITests.swift */,
+				0FD4C50C1E9FA3CF0033E17D /* Info.plist */,
+			);
+			path = "iGraffiti-DemoUITests";
+			sourceTree = "<group>";
+		};
+		0FF0E7461EA4FE6400B11494 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B58E91EA6425400900651 /* DrawLine.swift */,
+				0F4B58E51EA63B9500900651 /* Pen.swift */,
+				0F4B58E71EA63CBE00900651 /* Eraser.swift */,
+				0FF0E7421EA4EA6F00B11494 /* User.swift */,
+				0FF0E7441EA4FAD800B11494 /* Wall.swift */,
+				0F4B58E31EA639DC00900651 /* DrawManager.swift */,
+				0FF0E7471EA4FFC600B11494 /* UserManager.swift */,
+				0F465CFB1EB4CD0C00E26120 /* WallManager.swift */,
+				0FE30AC31EBCB17500063778 /* SceneManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75884B20B234E9AFBC3E1088 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03E2DD6C9B1CCDF2FB171D9D /* Pods-iGraffiti-Demo.debug.xcconfig */,
+				D572F92115AB54FFF81685C3 /* Pods-iGraffiti-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E54ED827F743F39F6A5D4034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				569A9A00C479C8C79A90F438 /* Pods_iGraffiti_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FD4C4E41E9FA3CE0033E17D /* iGraffiti-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD4C50F1E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-Demo" */;
+			buildPhases = (
+				22BDB5E24EE7A6B5BA73E4DD /* [CP] Check Pods Manifest.lock */,
+				0FD4C4E11E9FA3CE0033E17D /* Sources */,
+				0FD4C4E21E9FA3CE0033E17D /* Frameworks */,
+				0FD4C4E31E9FA3CE0033E17D /* Resources */,
+				63CC172C104CEDF77182E9FA /* [CP] Embed Pods Frameworks */,
+				5AED5E61E92438FFC0F62EBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iGraffiti-Demo";
+			productName = "iGraffiti-Demo";
+			productReference = 0FD4C4E51E9FA3CF0033E17D /* iGraffiti-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FD4C4FA1E9FA3CF0033E17D /* iGraffiti-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD4C5121E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-DemoTests" */;
+			buildPhases = (
+				0FD4C4F71E9FA3CF0033E17D /* Sources */,
+				0FD4C4F81E9FA3CF0033E17D /* Frameworks */,
+				0FD4C4F91E9FA3CF0033E17D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FD4C4FD1E9FA3CF0033E17D /* PBXTargetDependency */,
+			);
+			name = "iGraffiti-DemoTests";
+			productName = "iGraffiti-DemoTests";
+			productReference = 0FD4C4FB1E9FA3CF0033E17D /* iGraffiti-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FD4C5051E9FA3CF0033E17D /* iGraffiti-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD4C5151E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-DemoUITests" */;
+			buildPhases = (
+				0FD4C5021E9FA3CF0033E17D /* Sources */,
+				0FD4C5031E9FA3CF0033E17D /* Frameworks */,
+				0FD4C5041E9FA3CF0033E17D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FD4C5081E9FA3CF0033E17D /* PBXTargetDependency */,
+			);
+			name = "iGraffiti-DemoUITests";
+			productName = "iGraffiti-DemoUITests";
+			productReference = 0FD4C5061E9FA3CF0033E17D /* iGraffiti-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FD4C4DD1E9FA3CE0033E17D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "张 家豪";
+				TargetAttributes = {
+					0FD4C4E41E9FA3CE0033E17D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RH487T77ZJ;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					0FD4C4FA1E9FA3CF0033E17D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RH487T77ZJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0FD4C4E41E9FA3CE0033E17D;
+					};
+					0FD4C5051E9FA3CF0033E17D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RH487T77ZJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0FD4C4E41E9FA3CE0033E17D;
+					};
+				};
+			};
+			buildConfigurationList = 0FD4C4E01E9FA3CE0033E17D /* Build configuration list for PBXProject "iGraffiti-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FD4C4DC1E9FA3CE0033E17D;
+			productRefGroup = 0FD4C4E61E9FA3CF0033E17D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FD4C4E41E9FA3CE0033E17D /* iGraffiti-Demo */,
+				0FD4C4FA1E9FA3CF0033E17D /* iGraffiti-DemoTests */,
+				0FD4C5051E9FA3CF0033E17D /* iGraffiti-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FD4C4E31E9FA3CE0033E17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD4C4F51E9FA3CF0033E17D /* LaunchScreen.storyboard in Resources */,
+				0FD4C4F21E9FA3CF0033E17D /* Assets.xcassets in Resources */,
+				0FD4C4F01E9FA3CF0033E17D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C4F91E9FA3CF0033E17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C5041E9FA3CF0033E17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22BDB5E24EE7A6B5BA73E4DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AED5E61E92438FFC0F62EBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGraffiti-Demo/Pods-iGraffiti-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63CC172C104CEDF77182E9FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGraffiti-Demo/Pods-iGraffiti-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD4C4E11E9FA3CE0033E17D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F465D021EB4D1C100E26120 /* WallManagerWaitState.swift in Sources */,
+				0F81BDB01EA7856000B17F78 /* WallViewController.swift in Sources */,
+				0F4B58E41EA639DC00900651 /* DrawManager.swift in Sources */,
+				0FF0E7411EA4E9A800B11494 /* MainTabBarController.swift in Sources */,
+				0FF0E7451EA4FAD800B11494 /* Wall.swift in Sources */,
+				0FCF938B1EC0665F00336D9F /* WallTypeTableViewController.swift in Sources */,
+				0F4B58E81EA63CBE00900651 /* Eraser.swift in Sources */,
+				0FD4C4E91E9FA3CF0033E17D /* AppDelegate.swift in Sources */,
+				0FDC12A61EC9E0710040CCAB /* MD5.swift in Sources */,
+				0F5693E91ECB7DDF0019C2AF /* NotiWallListTableViewController.swift in Sources */,
+				0FB2E7121EAB4F4A0064E8D2 /* WallViewControllerDrawState.swift in Sources */,
+				0F58A3911EC1EBA200893B65 /* WallTableViewCell.swift in Sources */,
+				0FE11D311EC48F450076D38C /* AlertMessage.swift in Sources */,
+				0F58A3971EC20C7400893B65 /* UserInfoTableViewController.swift in Sources */,
+				0FCF93891EC05E6500336D9F /* CreateWallViewController.swift in Sources */,
+				0F465CFC1EB4CD0C00E26120 /* WallManager.swift in Sources */,
+				0F465D001EB4D11C00E26120 /* WallManagerWorkState.swift in Sources */,
+				0FF0E7481EA4FFC600B11494 /* UserManager.swift in Sources */,
+				0FF0E7431EA4EA6F00B11494 /* User.swift in Sources */,
+				0F465D041EB4D1F400E26120 /* WallManagerErrorState.swift in Sources */,
+				0FB2E7161EAB51A40064E8D2 /* WallViewControllerWorkState.swift in Sources */,
+				0F465CFE1EB4CE3600E26120 /* ManagerErrorType.swift in Sources */,
+				0FB2E7141EAB51490064E8D2 /* WallViewControllerWaitState.swift in Sources */,
+				0F4B58E21EA6392300900651 /* DrawTableView.swift in Sources */,
+				0F58A3951EC1FC6E00893B65 /* WallInfoTableViewController.swift in Sources */,
+				0F38383B1EC0D4A600DDD5B5 /* SearchTableViewController.swift in Sources */,
+				0F52843B1EB7B2D3005AEE44 /* CompareExtension.swift in Sources */,
+				0F4B58E61EA63B9500900651 /* Pen.swift in Sources */,
+				0FE11D331EC4A3710076D38C /* SignTableViewController.swift in Sources */,
+				0FB2E71A1EAB54010064E8D2 /* GKStateMachine+State.swift in Sources */,
+				0FE11D2F1EC48AE00076D38C /* SignUpTableViewController.swift in Sources */,
+				0F5693E71ECB64AE0019C2AF /* NotificationTableViewController.swift in Sources */,
+				0F4D6C2B1EBB97A100BCA772 /* UserViewController.swift in Sources */,
+				0F4B58EA1EA6425400900651 /* DrawLine.swift in Sources */,
+				0FE30AC41EBCB17500063778 /* SceneManager.swift in Sources */,
+				0F24B8271EB623550073FBCC /* Global.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C4F71E9FA3CF0033E17D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD4C5001E9FA3CF0033E17D /* iGraffiti_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FD4C5021E9FA3CF0033E17D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FD4C50B1E9FA3CF0033E17D /* iGraffiti_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FD4C4FD1E9FA3CF0033E17D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FD4C4E41E9FA3CE0033E17D /* iGraffiti-Demo */;
+			targetProxy = 0FD4C4FC1E9FA3CF0033E17D /* PBXContainerItemProxy */;
+		};
+		0FD4C5081E9FA3CF0033E17D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FD4C4E41E9FA3CE0033E17D /* iGraffiti-Demo */;
+			targetProxy = 0FD4C5071E9FA3CF0033E17D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FD4C4EE1E9FA3CF0033E17D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD4C4EF1E9FA3CF0033E17D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FD4C4F31E9FA3CF0033E17D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FD4C4F41E9FA3CF0033E17D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FD4C50D1E9FA3CF0033E17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FD4C50E1E9FA3CF0033E17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FD4C5101E9FA3CF0033E17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E2DD6C9B1CCDF2FB171D9D /* Pods-iGraffiti-Demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "iGraffiti-Demo/iGraffiti-Demo.entitlements";
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iGraffiti-Demo/iGraffiti-Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0FD4C5111E9FA3CF0033E17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D572F92115AB54FFF81685C3 /* Pods-iGraffiti-Demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "iGraffiti-Demo/iGraffiti-Demo.entitlements";
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iGraffiti-Demo/iGraffiti-Demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0FD4C5131E9FA3CF0033E17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iGraffiti-Demo.app/iGraffiti-Demo";
+			};
+			name = Debug;
+		};
+		0FD4C5141E9FA3CF0033E17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iGraffiti-Demo.app/iGraffiti-Demo";
+			};
+			name = Release;
+		};
+		0FD4C5161E9FA3CF0033E17D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "iGraffiti-Demo";
+			};
+			name = Debug;
+		};
+		0FD4C5171E9FA3CF0033E17D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RH487T77ZJ;
+				INFOPLIST_FILE = "iGraffiti-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ilord.iGraffiti-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "iGraffiti-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD4C4E01E9FA3CE0033E17D /* Build configuration list for PBXProject "iGraffiti-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD4C50D1E9FA3CF0033E17D /* Debug */,
+				0FD4C50E1E9FA3CF0033E17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD4C50F1E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD4C5101E9FA3CF0033E17D /* Debug */,
+				0FD4C5111E9FA3CF0033E17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD4C5121E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD4C5131E9FA3CF0033E17D /* Debug */,
+				0FD4C5141E9FA3CF0033E17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FD4C5151E9FA3CF0033E17D /* Build configuration list for PBXNativeTarget "iGraffiti-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FD4C5161E9FA3CF0033E17D /* Debug */,
+				0FD4C5171E9FA3CF0033E17D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FD4C4DD1E9FA3CE0033E17D /* Project object */;
+}
